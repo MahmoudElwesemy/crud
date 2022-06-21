@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>crud</title>
+</head>
+
+<body>
+    <section class="mainCrud">
+        <div class="crudHeader">
+            <h2>books i have read</h2>
+        </div>
+        <div class="bee">
+            <div class="img">
+                <img src="undraw_Reading_time_re_phf7.png" alt="">
+            </div>
+            <div class="crudData">
+                <div>
+                    <label for="Summary">book Name</label>
+                    <input type="text" name="" id="bookName" placeholder="BookName">
+                </div>
+                <div>
+                    <label for="startTime">start Time of reading</label>
+                    <input type="date" name=" startTime" id="startTime">
+                </div>
+                <div>
+                    <label for="endTime">end Time of reading</label>
+                    <input type="date" name="endTime" id="endTime">
+                </div>
+                <div>
+                    <label for="bookRating"> Rating</label>
+                    <input type="number" name="Rating of the book" id="bookRating" placeholder="Rate from 10" min="1" max="10">
+                </div>
+                <div>
+                    <label for="">link in goodreads</label>
+                    <input type="url" name="link" id="link">
+                </div>
+                <button id="addBook"> add book</button>
+            </div>
+
+        </div>
+
+
+
+        <div class="displayData">
+            <table>
+                <thead>
+                    <th>no</th>
+                    <th>book Name</th>
+                    <th>start Time of reading</th>
+                    <th>end Time of reading</th>
+                    <th>Rating</th>
+                    <th>summary</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </thead>
+                <tbody id="tableDisplay">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

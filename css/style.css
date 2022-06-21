@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fFF;
+}
+
+.mainCrud {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.crudHeader {
+    text-transform: capitalize;
+    padding: 30px;
+}
+
+.crudHeader h2 {
+    font-family: 'Potta One', cursive;
+    font-size: 3rem;
+}
+
+.crudData {
+    width: 60%;
+    padding: 20px;
+    text-align: left;
+    margin: auto;
+}
+
+.crudData div {
+    padding-bottom: 10px;
+}
+
+.crudData input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.crudData label {
+    text-transform: capitalize;
+    opacity: .5;
+    padding-bottom: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #6366FF;
+    color: #000
+}
+
+.bee {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto
+}
+
+.crudData {
+    width: 50%;
+}
+
+.img {
+    width: 40%
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.update {
+    background-color: rgb(25, 0, 139);
+}
+
+.delete {
+    background-color: crimson;
+}
+
+table {
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+th {
+    border-bottom: 1px solid rgb(77, 76, 76);
+    padding: 10px
+}
+
+@media screen and (max-width: 768px) {
+    .crudData {
+        width: 80%;
+    }
+    .img {
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mainCrud {
+        padding: 5px
+    }
+    .crudHeader h2 {
+        font-size: 1.2rem;
+    }
+    table {
+        margin: 0;
+        padding: 2px;
+    }
+}
